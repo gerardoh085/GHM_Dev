@@ -449,7 +449,7 @@
 
 .project-boxes{
     display: grid;
-    grid-template-columns: repeat(2, 1.5fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 .project-items p{
@@ -524,7 +524,7 @@
 .image-container p{
     /* width: 50ch; */
     text-align: center;
-    margin-bottom: 3.25em;
+    margin-bottom: 3.5em;
 }
 /* .image-container a{
     justify-content: flex-start;
@@ -538,10 +538,11 @@
     margin-top: 20px;
     /* max-width: 100%;
     height: auto; */
-    width: 375px;
-    height: 250px;
+    width: 250x;
+    height: 200px;
+    
     object-fit:fill;
-
+    /* object-fit: contain; */
     /*max-height: 100%;
     *//*padding-right: 10px;
     */border-radius: 10px;
@@ -562,7 +563,9 @@
     /* padding: 0.5em 0.5em 0.5em 0; */
 }
 
-
+.project-items{
+    /* height: 325px; */
+}
 
 @media screen and (max-width: 850px){
     .main-content{

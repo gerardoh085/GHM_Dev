@@ -35,8 +35,19 @@ var projects= [
         image: "./images/RockPaperScissors.png",
         skills: ["JavaScript", "CSS", "HTML"],
         github: "https://github.com/gerardoh085/RockPaperScissors",
+    },
+    {
+        name: "Analyzing Airline Data",
+        image: "./images/AirlineData.png",
+        skills: ["Python", "Data Analysis", "SQL"],
+        github: "https://github.com/gerardoh085/Analyzing-airline-data"
+    },
+    {
+        name: "Analyzing Smoking Data",
+        image: "./images/SmokingData.png",
+        skills: ["Python", "Data Analysis", "SQL"],
+        github: "https://github.com/gerardoh085/Analyzing-Smoking-Data"
     }
-
 
 ];
 
