@@ -60,7 +60,7 @@
 
 .video-boxes{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
 
@@ -82,7 +82,8 @@
 
 .videos{
     width: 100%;
-    height: auto;
+    max-height: 600px;
+    /* height: auto; */
     object-fit:fill;
     /* max-height: 80vh; */
 }
