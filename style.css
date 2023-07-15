@@ -12,6 +12,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
     box-sizing: border-box;
 }
 
@@ -33,7 +35,7 @@
 .navbar{
     min-height: 100vh;
     min-height: 100dvh;
-    
+    /* margin-right: 10px; */
     grid-column: span 1;
     grid-row: span 4;
     transition: width 0.3s ease-in-out;
@@ -450,7 +452,7 @@
 .project-boxes{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 20px;
 }
 .project-items p{
     letter-spacing: 1px;
@@ -538,8 +540,8 @@
     margin-top: 20px;
     /* max-width: 100%;
     height: auto; */
-    width: 250x;
-    height: 200px;
+    width: 100%;
+    height: auto;
     
     object-fit:fill;
     /* object-fit: contain; */

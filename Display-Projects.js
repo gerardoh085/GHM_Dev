@@ -3,7 +3,7 @@ import projects from "./project-items.js";
 
 projects.forEach((items)=>{
     var projectContainer = document.querySelector('.project-boxes');
-
+    
     // project item box
     var project_items = document.createElement('div');
     project_items.classList.add('project-items');
