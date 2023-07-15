@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./styles/about.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="navbar"></div>
+        <div id="header"></div>
+        <div id="user"></div>
+        <div class="about-content">
+
+            <div id="intro-container">
+                <div class="intro">
+                    Gerardo Hernandez Macoto
+                    <br>
+                    SEO Scholar | Lehigh University Alum 2023 | NACME Scholar
+                    <br>
+                    <br>
+                    <p>Welcome to my website! I'm thrilled to have you here and share a bit about myself. I am a
+                        passionate Computer Engineer with a deep interest in software engineering, data
+                        analysis, and systems engineering. Through my journey, I have gained
+                        valuable experience and expertise in software engineering through undergraduate research,
+                        coursework, and personal projects.
+                    </p>
+                    <br>
+                    <p>
+                        My goal is to continuously learn and to become a software engineer. I believe in continuous
+                        improvements, integrity, collaboration, and discipline in order to succeed and strive to share
+                        learning and insights with others through mentorship, presentations, or knowledge sharing
+                        platforms, uphold promises and commitments, foster a collaborative and inclusive work
+                        environment
+                        by actively listening to others, valuing their perspectives, and promoting open communication,
+                        and demonstrate strong work ethics and self-discipline by setting clear goals, prioritizing
+                        tasks, and meeting deadlines consistently. With a strong commitment to excellence and a
+                        passion for software engineering, I am dedicated to secure a software engineering position that
+                        provides me with challenging projects and opportunities for growth. I aim to work in a dynamic
+                        and innovative environment where I can apply my technical skills and contribute to the
+                        development of cutting-edge software solutions.
+                    </p>
+                    <br>
+                    <p>
+                        Throughout my undergraduate experience, I have had the privilege of assisting in undergraduate
+                        research projects in the department of electrical and computer engineering, the department of
+                        bioengineering, and software engineering coursework. These experiences have shaped my skills in
+                        machine learning, project management, mobile and web development, backend development, and
+                        provided me with insights into software engineering.
+                    </p>
+                    <br>
+                    <p>
+                        When I'm not working or pursuing my professional goals, you can find me immersing myself in
+                        learning new skills through free online resources like the Odin Project and w3schools, hitting
+                        the gym to stay active and healthy, and challenging my mind with word search puzzles. It's my
+                        way of embracing continuous growth, both mentally and physically.
+                    </p>
+                    <br>
+                    <p>
+                        Thank you for visiting my website. I invite you to explore further and learn more about my
+                        projects and academic achievements during my time as a computer engineering student at Lehigh
+                        University. As a recent graduate, I have gained valuable knowledge and experience in areas such
+                        as hardware design, computer architecture, embedded systems, and programming languages. From
+                        designing digital circuits to developing software applications, I have tackled diverse
+                        challenges that have sharpened my problem-solving and analytical skills. Feel free to delve into
+                        my portfolio and discover the exciting projects I have completed, demonstrating my passion for
+                        computer engineering and software engineering and my ability to apply theoretical concepts to
+                        real-world applications.
+                    </p>
+                    <br>
+                    <br>
+                    Warm regards,
+                    <br>
+                    Gerardo Hernandez Macoto
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- <br> -->
+        <div id="footer"></div>
+    </div>
+
+    <script>
+        fetch('./components/template.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar').innerHTML = html;
+            })
+            .then(() => {
+                const script = document.createElement('script');
+                script.src = './scripts/template.js';
+                document.body.appendChild(script);
+            });
+        fetch('./components/headeruser.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+        fetch('./components/user.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('user').innerHTML = html;
+            });
+        fetch('./components/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+
+
+    </script>
+
+</body>
+
+</html>
