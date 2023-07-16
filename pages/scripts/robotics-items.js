@@ -3,7 +3,7 @@ var robotics = [
     {
         name: "Programming the Freenove Robot",
         // video:"../../videos/CSE360_GHM_Lab2.mp4",
-        video:"https://github.com/gerardoh085/GHM_Dev/tree/main/videos/CSE360_GHM_Lab2.mp4",
+        video:"../../GHM_Dev/tree/main/videos/CSE360_GHM_Lab2.mp4",
         description: "Connecting to Freenove Robot, getting familiar with documentation, and testing robots functionality."
     },
     {
