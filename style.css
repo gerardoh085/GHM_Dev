@@ -391,6 +391,19 @@
 
 
 @media (max-width: 700px) {
+    .navbar .title{
+        position: fixed;
+    }
+    .main-links{
+        margin-top: 40px;
+        position: fixed;
+    }
+    .support-links{
+        margin-top: 325px;
+        position: fixed;
+    }
+
+
     .header-container{
         /* display: flex;
         padding: 20px; */
@@ -588,6 +601,7 @@
     .footer{
         text-align: center;
     }
+
     /* .project-boxes{
 
     } */
