@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../pages/styles/about.css">
+    <link rel="stylesheet" href="./styles/uc.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="navbar"></div>
+        <div id="header"></div>
+        <div id="user"></div>
+        <div id="construction">
+
+            <div class="construction-box">
+                <div class="header-row">
+                    <h1>Coming Soon...</h1>
+                </div>
+                <div class="main-construction">
+                    <div class="content-container">
+                        <div>
+                            <svg class="svg-image largeImg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12,15C7.58,15 4,16.79 4,19V21H20V19C20,16.79 16.42,15 12,15M8,9A4,4 0 0,0 12,13A4,4 0 0,0 16,9M11.5,2C11.2,2 11,2.21 11,2.5V5.5H10V3C10,3 7.75,3.86 7.75,6.75C7.75,6.75 7,6.89 7,8H17C16.95,6.89 16.25,6.75 16.25,6.75C16.25,3.86 14,3 14,3V5.5H13V2.5C13,2.21 12.81,2 12.5,2H11.5Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="desc">
+                        <p>
+                            Currently under construction!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script>
+
+        fetch("./components/template.html")
+            .then((response) => response.text())
+            .then((html) => {
+                document.getElementById("navbar").innerHTML = html;
+            })
+            .then(() => {
+                const script = document.createElement("script");
+                script.src = "./components/template.js";
+                document.appendChild(script);
+            })
+        fetch("./components/headeruser.html")
+            .then((response) => response.text())
+            .then((html) => {
+                document.getElementById("header").innerHTML = html;
+            });
+        fetch("./components/user.html")
+            .then((response) => response.text())
+            .then((html) => {
+                document.getElementById("user").innerHTML = html;
+            });
+        fetch("./components/footer.html")
+            .then((response) => response.text())
+            .then((html) => {
+                document.getElementById("footer").innerHTML = html;
+            });
+    </script>
+</body>
+
+</html>
