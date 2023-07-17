@@ -391,18 +391,12 @@
 
 
 @media (max-width: 700px) {
-    .navbar .title{
-        position: fixed;
-    }
-    .main-links{
-        margin-top: 40px;
-        position: fixed;
-    }
-    .support-links{
-        margin-top: 325px;
-        position: fixed;
-    }
+    
 
+    .navbar{
+        position: sticky;
+        top: 0;
+    }
 
     .header-container{
         /* display: flex;
